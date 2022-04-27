@@ -33,7 +33,8 @@
     </q-drawer>
     <!-- 페이지 컨테이너 -->
     <q-page-container>
-      <!-- router에서 설정한 children 컴포넌트 : IndexPage.vue 삽입 -->
+      <!-- router : 경로 컴포넌트 -->
+      <!-- 라우터에서 설정한 경로에 따라 다른 컴포넌트가 들어감 -->
       <router-view />
       <router-view name="subPage" />
       <Footer />
@@ -51,7 +52,7 @@ const linksList = [
     title: "Home",
     caption: "홈페이지",
     icon: "favorite",
-    //link - default "#"
+    link: "/#/home", // /home은 /의 alias.
   },
   {
     title: "Posts",
@@ -63,7 +64,7 @@ const linksList = [
     title: "Post-username",
     caption: "게시물 조회(lemon)",
     icon: "code",
-    link: "/#/lemon/post",
+    link: "/#/post/lemon", // /lemon/post로 리다이렉트.
   },
   {
     title: "Post-id",

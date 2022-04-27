@@ -1,4 +1,3 @@
-<!-- 테스트 -->
 <script setup>
 import { ref } from "vue";
 const fruit = ref("apple");
@@ -13,6 +12,7 @@ const fruit = ref("apple");
       style="width: 200px; height: 200px"
     />
     {{ fruit }}
+    <h4>{{ query }}</h4>
   </q-page>
 </template>
 
@@ -21,5 +21,6 @@ import { defineComponent } from "vue";
 
 export default defineComponent({
   name: "IndexPage",
+  props: ["query"],
 });
 </script>

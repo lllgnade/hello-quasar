@@ -37,16 +37,18 @@ fetch('https://jsonplaceholder.typicode.com/posts/1')
 // eslint-disable-next-line no-unused-vars
 const props = defineProps({
   msg: String,
+  id: Number,
+  userName: String,
 });
 </script>
 
 <template>
   <h1>{{ msg }}</h1>
-  <p v-if="$route.params.id">
-    {{ "포스트 번호 : " + $route.params.id }}
+  <p v-if="id">
+    {{ "포스트 번호 : " + id }}
   </p>
-  <p v-if="$route.params.userName">
-    {{ "유저 네임 : " + $route.params.userName }}
+  <p v-if="userName">
+    {{ "유저 네임 : " + userName }}
   </p>
   <hr />
   <ChildComp msg="child"> Parent에서 보낸 슬롯! </ChildComp>
