@@ -45,34 +45,28 @@ import EssentialLink from "components/EssentialLink.vue";
 
 const linksList = [
   {
-    title: "문서",
-    caption: "quasar.dev",
-    icon: "school",
-    link: "https://quasar.dev",
-  },
-  {
-    title: "깃헙",
-    caption: "github.com/quasarframework",
-    icon: "code",
-    link: "https://github.com/quasarframework",
-  },
-  {
-    title: "디스코드",
-    caption: "chat.quasar.dev",
-    icon: "chat",
-    link: "https://chat.quasar.dev",
-  },
-  {
-    title: "포럼",
-    caption: "forum.quasar.dev",
-    icon: "record_voice_over",
-    link: "https://forum.quasar.dev",
-  },
-  {
-    title: "Quasar Awesome",
-    caption: "Community Quasar projects",
+    title: "Home",
+    caption: "홈페이지",
     icon: "favorite",
-    link: "https://awesome.quasar.dev",
+    //link - default "#"
+  },
+  {
+    title: "Posts",
+    caption: "게시물 조회",
+    icon: "school",
+    link: "/#/post",
+  },
+  {
+    title: "Post-id",
+    caption: "게시물 조회(1234)",
+    icon: "record_voice_over",
+    link: "/#/post/1245",
+  },
+  {
+    title: "Post-username",
+    caption: "게시물 조회(lemon)",
+    icon: "code",
+    link: "/#/post/lemon",
   },
 ];
 

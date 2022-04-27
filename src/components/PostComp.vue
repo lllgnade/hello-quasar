@@ -45,7 +45,7 @@ const props = defineProps({
   <p v-if="$route.params.id">
     {{ "포스트 번호 : " + $route.params.id }}
   </p>
-  <p v-else>
+  <p v-if="$route.params.userName">
     {{ "유저 네임 : " + $route.params.userName }}
   </p>
   <hr />
