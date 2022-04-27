@@ -4,6 +4,7 @@
   <!-- /(루트 경로)일 때 : layouts/MainLayout.vue 를 불러옴 ( 안에 pages/IndexPage.vue 컴포넌트를 내장함) -->
   <!-- 기타 페이지 요청할 때 : pages/ErrorNotFound.vue 를 불러옴 -->
   <router-view />
+  <router-view name="footer" />
 </template>
 
 <script>

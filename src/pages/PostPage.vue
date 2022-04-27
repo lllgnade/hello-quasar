@@ -6,6 +6,4 @@ import PostComp from "components/PostComp.vue";
   <div class="hello">
     <PostComp msg="Hello Post!!" />
   </div>
-  <!--라우터에서 설정한 Children Component-->
-  <router-view></router-view>
 </template>

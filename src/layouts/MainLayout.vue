@@ -35,6 +35,8 @@
     <q-page-container>
       <!-- router에서 설정한 children 컴포넌트 : IndexPage.vue 삽입 -->
       <router-view />
+      <router-view name="subPage" />
+      <Footer />
     </q-page-container>
   </q-layout>
 </template>
@@ -42,6 +44,7 @@
 <script>
 import { defineComponent, ref } from "vue";
 import EssentialLink from "components/EssentialLink.vue";
+import Footer from "components/FooterComp.vue";
 
 const linksList = [
   {
@@ -57,16 +60,16 @@ const linksList = [
     link: "/#/post",
   },
   {
+    title: "Post-username",
+    caption: "게시물 조회(lemon)",
+    icon: "code",
+    link: "/#/lemon/post",
+  },
+  {
     title: "Post-id",
     caption: "게시물 조회(1234)",
     icon: "record_voice_over",
     link: "/#/post/1245",
-  },
-  {
-    title: "Post-username",
-    caption: "게시물 조회(lemon)",
-    icon: "code",
-    link: "/#/post/lemon",
   },
 ];
 
@@ -76,6 +79,7 @@ export default defineComponent({
 
   components: {
     EssentialLink,
+    Footer,
   },
 
   setup() {
