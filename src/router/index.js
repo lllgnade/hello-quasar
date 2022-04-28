@@ -37,5 +37,14 @@ export default route(function (/* { store, ssrContext } */) {
     ),
   });
 
+  //전역 내비게이션 가드
+  /*
+  Router.beforeEach((to, from) => {
+    // ...
+    // explicitly return false to cancel the navigation
+    return false;
+  });
+  */
+
   return Router;
 });

@@ -52,25 +52,25 @@ const linksList = [
     title: "Home",
     caption: "홈페이지",
     icon: "favorite",
-    link: "/#/home", // /home은 /의 alias.
+    link: "/home", // /home은 /의 alias.
   },
   {
     title: "Posts",
     caption: "게시물 조회",
     icon: "school",
-    link: "/#/post",
+    link: "/post",
   },
   {
     title: "Post-username",
     caption: "게시물 조회(lemon)",
     icon: "code",
-    link: "/#/post/lemon", // /lemon/post로 리다이렉트.
+    link: "/post/lemon", // /lemon/post로 리다이렉트.
   },
   {
     title: "Post-id",
     caption: "게시물 조회(1234)",
     icon: "record_voice_over",
-    link: "/#/post/1245",
+    link: "/post/1245",
   },
 ];
 
